@@ -6,8 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCode,
   faEnvelope,
+  faGear,
   faHome,
+  faMessage,
   faUser,
+  faUserNinja,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -28,8 +31,18 @@ const Sidebar = () => {
           className="about-link"
           to="/about"
         >
-          <FontAwesomeIcon icon={faUser} color="white" />
+          <FontAwesomeIcon icon={faUserNinja} color="white" />
         </NavLink>
+
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="skills-link"
+          to="/skills"
+        >
+          <FontAwesomeIcon icon={faGear} color="white" />
+        </NavLink>
+
         <NavLink
           exact="true"
           activeclassname="active"
@@ -44,7 +57,7 @@ const Sidebar = () => {
           className="contact-link"
           to="/contact"
         >
-          <FontAwesomeIcon icon={faEnvelope} color="white" />
+          <FontAwesomeIcon icon={faMessage} color="white" />
         </NavLink>
       </nav>
       <ul>
