@@ -1,10 +1,15 @@
-import './index.scss';
-import { Link, NavLink } from 'react-router-dom';
-import LogoHZ from '../../assets/images/logo-hz.jpg';
-import LogoHazeek from '../../assets/images/logo-hazeek.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import "./index.scss";
+import { Link, NavLink } from "react-router-dom";
+import LogoHZ from "../../assets/images/logo-hz.jpg";
+import LogoHazeek from "../../assets/images/logo-hazeek.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCode,
+  faEnvelope,
+  faHome,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => {
   return (
@@ -24,6 +29,14 @@ const Sidebar = () => {
           to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="white" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="portfolio-link"
+          to="/portfolio"
+        >
+          <FontAwesomeIcon icon={faCode} color="white" />
         </NavLink>
         <NavLink
           exact="true"

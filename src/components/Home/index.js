@@ -10,26 +10,28 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setletterClass("text-animate-hover");
-    }, 4000);
+    }, 3000);
   }, []);
 
   return (
     <div className="container home-page">
       <div className="text-zone">
         <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
-          <br />
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={"Hello!".split("")}
+            idx={10}
+          />
 
           <AnimatedLetters
             letterClass={letterClass}
             strArray={"I'm Haziq Luqman".split("")}
-            idx={15}
+            idx={12}
           />
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={"Junior Developer.".split("")}
-            idx={20}
+            strArray={"Web Developer.".split("")}
+            idx={15}
           />
         </h1>
         <br />
