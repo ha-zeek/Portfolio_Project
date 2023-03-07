@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnimatedLetters from "../AnimatedLetters";
+import Gif from "./Gif";
 import "./index.scss";
 
 const Home = () => {
@@ -27,7 +28,7 @@ const Home = () => {
           />
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={"Web Developer.".split("")}
+            strArray={"Junior Developer.".split("")}
             idx={20}
           />
         </h1>
@@ -37,6 +38,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Gif />
     </div>
   );
 };

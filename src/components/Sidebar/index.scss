@@ -45,7 +45,7 @@
       }
 
       &:hover {
-        color: white;
+        color: #01d49a;
 
         svg {
           opacity: 0;
@@ -56,7 +56,7 @@
         }
       }
       &:after {
-        content: '';
+        content: "";
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -70,26 +70,26 @@
 
       &:first-child {
         &::after {
-          content: 'HOME';
+          content: "HOME";
         }
       }
     }
 
     a.about-link {
       &::after {
-        content: 'ABOUT';
+        content: "ABOUT";
       }
     }
 
     a.contact-link {
       &::after {
-        content: 'CONTACT';
+        content: "CONTACT";
       }
     }
 
     a.active {
       svg {
-        color: aqua;
+        color: #01d49a;
       }
     }
   }
@@ -112,7 +112,7 @@
         line-height: 16px;
 
         &:hover svg {
-          color: aqua;
+          color: #01d49a;
         }
       }
     }
