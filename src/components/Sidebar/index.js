@@ -5,14 +5,16 @@ import LogoHazeek from "../../assets/images/logo-hazeek.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCode,
-  faEnvelope,
   faGear,
   faHome,
   faMessage,
-  faUser,
   faUserNinja,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faDiscord,
+  faGithub,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => {
   return (
@@ -67,12 +69,21 @@ const Sidebar = () => {
             rel="norefferer"
             href="https://www.linkedin.com/in/haziq-luqman-611500172/"
           >
-            <FontAwesomeIcon icon={faLinkedin} color="white" />
+            <FontAwesomeIcon icon={faLinkedinIn} color="white" />
           </a>
         </li>
         <li>
           <a target="_blank" rel="norefferer" href="https://github.com/ha-zeek">
-            <FontAwesomeIcon icon={faGithubSquare} color="white" />
+            <FontAwesomeIcon icon={faGithub} color="white" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="norefferer"
+            href="https://discordapp.com/users/260799150168211459"
+          >
+            <FontAwesomeIcon icon={faDiscord} color="white" />
           </a>
         </li>
       </ul>
