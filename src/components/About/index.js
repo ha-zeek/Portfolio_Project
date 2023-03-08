@@ -58,7 +58,7 @@ const About = () => {
         </button>
       </div>
       <div>
-        <img className="avatar" src={avatar} />
+        <img className="avatar" src={avatar} alt="avatar" />
       </div>
     </div>
   );
