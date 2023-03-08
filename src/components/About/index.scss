@@ -5,3 +5,13 @@
   margin-top: 40px;
   margin-right: 200px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

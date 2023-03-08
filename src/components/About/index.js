@@ -2,6 +2,7 @@ import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
 import { useState, useEffect } from "react";
 import avatar from "../../assets/images/avatar.png";
+import resume from "./Resume/Resume2023.pdf";
 
 const About = () => {
   const [letterClass, setletterClass] = useState("text-animate");
@@ -50,6 +51,11 @@ const About = () => {
           the world. Please feel free to contact me to learn more about my work
           or discuss potential collaborations.
         </p>
+        <button className="flat-button">
+          <a href={resume} target="_blank" rel="noreferrer">
+            Resume
+          </a>
+        </button>
       </div>
       <div>
         <img className="avatar" src={avatar} />
