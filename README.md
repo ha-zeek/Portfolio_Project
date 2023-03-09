@@ -12,7 +12,7 @@
 
 ![My Image](screenshots/portfolioSS.png)
 
-Link => [Hazeek](https://portfolio-project-hazel.vercel.app/)
+[Link](https://portfolio-project-hazel.vercel.app/)
 
 The portfolio is designed to showcase my work to potential employers and collaborators.
 Built using React, SASS, and Animate.CSS, this portfolio provides a clean and modern design that effectively displays my projects and skills.
