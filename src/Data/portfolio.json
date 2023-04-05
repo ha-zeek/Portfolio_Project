@@ -4,19 +4,22 @@
       "cover": "/Portfolio/1/SpaceInvadersSS.png",
       "title": "Space Invader",
       "description": "Vanilla JS & CSS",
-      "url": "https://ha-zeek.github.io/ProjectSpaceInvader/"
+      "url": "https://ha-zeek.github.io/ProjectSpaceInvader/",
+      "github": "https://github.com/ha-zeek/ProjectSpaceInvader"
     },
     {
       "cover": "/Portfolio/1/BookAppSS.png",
       "title": "BookApp",
       "description": "ExpressJS, MongoDB, Boostrap",
-      "url": "https://bookapp-bjot.onrender.com/"
+      "url": "https://bookapp-bjot.onrender.com/",
+      "github": "https://github.com/ha-zeek/BookApp"
     },
     {
       "cover": "/Portfolio/1/DansListSS.png",
       "title": "Dan's List",
-      "description": "React, JSX, Bootstrap, MongoDB",
-      "url": "https://dans-list.vercel.app/"
+      "description": "React, Bootstrap, MongoDB",
+      "url": "https://dans-list.vercel.app/",
+      "github": "https://github.com/ha-zeek/DansList"
     }
   ]
 }

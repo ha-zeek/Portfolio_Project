@@ -4,6 +4,8 @@ import LogoHZ from "../../assets/images/logo-hz.jpg";
 import LogoHazeek from "../../assets/images/logo-hazeek.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBars,
+  faClose,
   faCode,
   faGear,
   faHome,
@@ -15,19 +17,28 @@ import {
   faGithub,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 const Sidebar = () => {
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        <img src={LogoHZ} alt="logo" />
+        <img src={LogoHZ} className="logoHz" alt="logo" />
         <img className="sub-logo" src={LogoHazeek} alt="hazeek" />
       </Link>
-      <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+      <nav className={showNav ? "mobile-show" : ""}>
+        <NavLink
+          onClick={() => setShowNav(false)}
+          exact="true"
+          activeclassname="active"
+          to="/"
+        >
           <FontAwesomeIcon icon={faHome} color="white" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           className="about-link"
@@ -37,6 +48,7 @@ const Sidebar = () => {
         </NavLink>
 
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           className="skills-link"
@@ -46,6 +58,7 @@ const Sidebar = () => {
         </NavLink>
 
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           className="portfolio-link"
@@ -54,6 +67,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faCode} color="white" />
         </NavLink>
         <NavLink
+          onClick={() => setShowNav(false)}
           exact="true"
           activeclassname="active"
           className="contact-link"
@@ -61,6 +75,13 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faMessage} color="white" />
         </NavLink>
+        <FontAwesomeIcon
+          onClick={() => setShowNav(false)}
+          icon={faClose}
+          color="white"
+          size="3x"
+          className="close-icon"
+        />
       </nav>
       <ul>
         <li>
@@ -87,6 +108,13 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
+      <FontAwesomeIcon
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="white"
+        size="2x"
+        className="hamburger-icon"
+      />
     </div>
   );
 };

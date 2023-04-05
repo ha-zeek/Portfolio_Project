@@ -51,7 +51,7 @@ const About = () => {
           the world. Please feel free to contact me to learn more about my work
           or discuss potential collaborations.
         </p>
-        <button className="flat-button">
+        <button className="flat-button resume">
           <a href={resume} target="_blank" rel="noreferrer">
             Resume
           </a>

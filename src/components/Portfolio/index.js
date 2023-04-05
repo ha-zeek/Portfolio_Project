@@ -2,6 +2,8 @@ import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
 import { useState, useEffect } from "react";
 import portfolioData from "../../Data/portfolio.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Portfolio = () => {
   const [letterClass, setletterClass] = useState("text-animate");
@@ -29,6 +31,12 @@ const Portfolio = () => {
                 <h4 className="description">{port.description}</h4>
                 <button className="btn" onClick={() => window.open(port.url)}>
                   View
+                </button>
+                <button
+                  className="btn gitHub"
+                  onClick={() => window.open(port.github)}
+                >
+                  <FontAwesomeIcon size="1x" icon={faGithub} color="white" />
                 </button>
               </div>
             </div>

@@ -64,6 +64,9 @@
       color: white;
       font-weight: 700;
     }
+    .gitHub {
+      margin-left: 10px;
+    }
 
     .btn {
       margin-top: 30px;
@@ -107,6 +110,35 @@
     &:hover .content {
       bottom: 0;
       background: transparent;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container.portfolio-page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    h1.page-title {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .image-box {
+      height: 200px;
+      max-width: 50%;
+      flex: 1 1 40%;
+    }
+
+    .description {
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .btn {
+      max-width: 50%;
+      padding: 0 10px;
     }
   }
 }

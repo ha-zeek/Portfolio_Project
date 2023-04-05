@@ -40,7 +40,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
-      <Gif />
+      <Gif className="gif" />
     </div>
   );
 };
