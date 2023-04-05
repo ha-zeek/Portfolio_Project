@@ -84,7 +84,9 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" />
+                  <button type="submit" className="flat-button">
+                    Submit
+                  </button>
                 </li>
               </ul>
             </form>
