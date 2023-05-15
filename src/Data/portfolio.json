@@ -20,6 +20,13 @@
       "description": "React, Bootstrap, MongoDB",
       "url": "https://dans-list.vercel.app/",
       "github": "https://github.com/ha-zeek/DansList"
+    },
+    {
+      "cover": "/Portfolio/1/MovieSS.png",
+      "title": "MovieDeets",
+      "description": "Vanilla JS & CSS",
+      "url": "https://movie-deets.vercel.app/",
+      "github": "https://github.com/ha-zeek/MovieDeets"
     }
   ]
 }
